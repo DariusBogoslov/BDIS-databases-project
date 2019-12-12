@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MedicalConditionsStoreContainer" CdmEntityContainer="BDISAppMedicalConditions">
+    <EntitySetMapping Name="MedicalConditions">
+      <EntityTypeMapping TypeName="MedicalConditions.MedicalConditions">
+        <MappingFragment StoreEntitySet="MedicalConditions">
+          <ScalarProperty Name="Afectiune" ColumnName="Afectiune" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Patient_UID" ColumnName="Patient_UID" />
+          <ScalarProperty Name="Entry_UID" ColumnName="Entry_UID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

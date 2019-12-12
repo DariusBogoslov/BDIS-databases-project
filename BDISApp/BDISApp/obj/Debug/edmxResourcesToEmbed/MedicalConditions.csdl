@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MedicalConditions" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MedicalConditions">
+    <Key>
+      <PropertyRef Name="Entry_UID" />
+    </Key>
+    <Property Name="Afectiune" Type="String" MaxLength="45" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Data" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Patient_UID" Type="String" MaxLength="36" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Entry_UID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BDISAppMedicalConditions" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MedicalConditions" EntityType="Self.MedicalConditions" />
+  </EntityContainer>
+</Schema>
